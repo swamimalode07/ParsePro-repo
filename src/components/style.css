@@ -1,0 +1,45 @@
+.Nav-back {
+    height: 3.5rem;
+    margin-top: 1rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    background-color: #2D7DD2; /* Original background */
+    border: 3px solid gray;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: white;
+}
+
+.Nav-back:hover {
+    background-color: #6BAAED; /* Lighter blue on hover */
+}
+
+.Nav-back p {
+    margin-left: 1rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: white;
+}
+
+
+@media(max-width:768px){
+    .Nav-back {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        height: 2rem;
+        
+        padding: 1rem;
+    }
+
+    .Nav-back p {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+        
+    }
+
+    
+}

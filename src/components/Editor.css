@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0; /* Neutral background for overall app */
+    color: #333; /* Standard text color */
+  }
+  
+  .editor-preview-container {
+    display: flex;
+    height: 80vh; /* Adjusted height for better visibility */
+    border: 1px solid #ddd; /* Subtle border around the entire editor-preview layout */
+    border-radius: 8px; /* Rounded corners for modern UI */
+    overflow: hidden; /* Prevent content overflow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for better elevation */
+    background-color: #fff; /* White background for the container */
+  }
+  
+  .editor-container {
+    flex: 1;
+    border-right: 1px solid #ccc; /* Subtle separator line */
+    padding: 15px; /* Consistent padding for better spacing */
+    background-color: #1e1e1e; /* Dark editor background matching themes */
+    color: #f5f5f5; /* Light text for readability */
+    overflow: auto; /* Allow scrolling if content exceeds height */
+  }
+  
+  .preview-container {
+    flex: 1;
+    padding: 15px;
+    background-color: #fafafa; /* Bright but neutral preview background */
+    overflow: auto;
+    color: #333; /* Ensure text is clearly visible */
+    font-size: 16px; /* Larger text for preview readability */
+    line-height: 1.6; /* Improved line spacing for better readability */
+    word-break: break-word; /* Handle long words gracefully */
+  }
+  
+  select {
+    margin-bottom: 15px;
+    padding: 8px 10px;
+    font-size: 14px;
+    background-color: #fff; /* Matches surrounding layout */
+    border: 1px solid #ccc; /* Subtle border for input */
+    border-radius: 4px; /* Rounded corners for better style */
+    color: #333; /* Text color for good contrast */
+    cursor: pointer; /* Pointer cursor to indicate interactiveness */
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  select:focus {
+    border-color: #007bff; /* Highlighted border on focus */
+  }
+  
+  label {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #555; /* Subtle color for labels */
+  }
+  
+  h3 {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  code, pre {
+    font-family: 'Courier New', Courier, monospace;
+    background: #eee;
+    padding: 5px;
+    border-radius: 4px;
+  }
+  
+  @media (max-width: 768px) {
+    .editor-preview-container {
+      flex-direction: column; /* Stack editor and preview vertically */
+      height: auto; /* Allow height to adjust */
+    }
+  
+    .editor-container, .preview-container {
+      flex: none;
+      height: 50vh; /* Give each section half the screen height */
+    }
+  }
+  
